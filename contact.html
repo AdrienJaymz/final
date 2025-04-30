@@ -3,8 +3,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header>
+    <h1>Contact Me</h1>
+    </header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="bloglist.html">Blogs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="contact">
+            <div class="container">
+              <form>
+                <div class="formgroup">
+                    <label for="firstname">First Name*</label>
+                    <input type="text" name="firstname" id="firstname" required class="formelement"
+                    placeholder="John">
+                </div>
+                <div class="formgroup">
+                    <label for="lastname">Last Name*</label>
+                    <input type="text" name="lastname" id="lastname" required class="formelement"
+                    placeholder="Doe">
+                </div>
+                <div class="formgroup">
+                    <label for="email">Email Address*</label>
+                    <input type="email" name="email" id="email" required class="formelement"
+                    placeholder="john.doe@example.com">
+                </div>
+                <div class="formgroup full">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" class="formelement"></textarea>
+                </div>
+                <div class="submit">
+                    <a href="thanks.html">Submit</a>
+                </div>
+              </form> 
+            </div>
+        </section>
+    </main>
+    <footer>&copy;2025 Adrien Wilson</footer>
 </body>
 </html>

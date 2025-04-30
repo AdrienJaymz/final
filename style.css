@@ -1,0 +1,231 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    min-height: 100vh;
+    background-image: linear-gradient(135deg, #d489d7, #d5c5a9);
+}
+
+h1{
+    font-size: 4rem;
+    text-align: center;
+    text-shadow: 2px 1px #000;
+    background-color: #e6effc;
+    color: #e6effc;
+    background-image: url(images/ghostbanner.jpg);
+    background-size: cover;
+    height: 6rem;
+}
+
+h2{
+    padding: 5px 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h3{
+    padding: 15px;
+    text-align: center;
+}
+
+p{
+    padding: 2rem;
+}
+
+.whoami {
+    font-size: 25px;
+    text-align: center;
+}
+
+nav{
+    background-color: rgb(86, 4, 134);
+    box-shadow: 3px 3px 5px rgb(0, 0, 0.1);
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li{
+    height: 50px;
+}
+
+nav a{
+    height: 50px;
+    color: antiquewhite;
+    text-decoration: none;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+} 
+
+nav a:hover{
+    background-color: rgb(143, 60, 194)
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
+
+.blogcard{
+    background: linear-gradient(135deg, #d489d7, #d5c5a9);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    overflow: hidden;
+    width: 30rem;
+    max-width: 80rem;
+    margin: 4rem auto;
+}
+
+.blogimage{
+    height: 250px;
+    background-image: url(images/coding.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.blogimagetwo{
+    height: 250px;
+    background-image: url(images/Blog-Post_Video-Games-1280x720.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.blogimagethree{
+    height: 250px;
+    background-image: url(images/Movie-Theater-Film-Cinema-Exhibition-Placeholder.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.blogcontent{
+    padding: 20px;
+    color: lavender;
+}
+
+.blogcontent h2{
+    font-size: 20px;
+    margin: 20px 0px;
+}
+
+.blogcontent p{
+    font-size: 18px;
+    margin: 20px 0px;
+}
+.readmorebutton a{
+    display: inline-block;
+    background-color: #d489d7;
+    color: #000;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.readmorebutton a:hover{
+    background-color: #000;
+    color:#d489d7
+}
+img{
+    display: block;
+    margin: auto;
+    height: 20rem;
+    box-shadow: 0px 0px 10px #000;
+    
+} 
+
+footer{
+    background-color: rgb(86, 4, 134);
+    color: #e6effc;
+}
+
+.contact{
+    min-height: 100vh;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: linear-gradient(135deg, #d489d7, #d5c5a9);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 32px;
+    padding: 32px;
+}
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 16px;
+    background-color: azure;
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: 0px 6px 12px rgba(0,0,0,0.2);
+
+    @media (min-width:760px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.formgroup {
+
+    &.full {
+        grid-column: 1 / -1;
+    }
+    label {
+        display: block;
+        margin-bottom: 5px;
+        color: #888;
+        font-size: 14px;
+    }
+}
+
+.formelement {
+    appearance: none;
+    outline: none;
+    border: none;
+
+    display: block;
+    width: 100%;
+
+    border-radius: 8px;
+    padding: 12px 16px;
+    background-color: #f3f3f3;
+}
+
+textarea {
+    resize: none;
+    min-height: 100px;
+}
+
+.submit a{
+    grid-column: 1 / -1;
+    text-align: right;
+
+        appearance: none;
+        border: none;
+        outline: none;
+        background: none;
+
+        padding: 12px 16px;
+        background-color: #d489d7;
+        border-radius: 8px;
+        color: #000;
+
+        &:hover {
+            background-color: #000;
+            color: #d489d7;
+        }   
+}
+
+.thanks {
+    text-align: center;
+    font-size: 8rem;
+}
